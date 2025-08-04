@@ -30,4 +30,4 @@ COPY --from=build-frontend /app/frontend/build/index.html /app/backend/templates
 
 EXPOSE 80
 
-CMD ["gunicorn","backend.wsgi:application","--bind", "0.0.0:80"]
+CMD ["gunicorn","backend.backend.wsgi:application","--chdir", "backend", "--bind", "0.0.0:80"]
