@@ -27,7 +27,6 @@ COPY --from=build-frontend /app/frontend/build /app/backend/static/
 COPY --from=build-frontend /app/frontend/build/static /app/backend/static/
 COPY --from=build-frontend /app/frontend/build/index.html /app/backend/templates/index.html
 
-RUN python ./backend/manage.py makemigrations
 RUN python ./backend/manage.py migrate
 
 RUN python ./backend/manage.py collectstatic --no-input
