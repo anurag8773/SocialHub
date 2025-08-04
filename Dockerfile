@@ -12,7 +12,7 @@ RUN npm install
 RUN npm run build
 
 #Stage 2:Build Backend
-FROM python:3.11:0
+FROM python:3.11.0
 
 Env PYTHONDONTWRITEBYTECODE=1
 Env PYTHONUNBUFFERED=1
