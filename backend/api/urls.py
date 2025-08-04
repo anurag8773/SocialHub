@@ -1,7 +1,6 @@
 from django.urls import path
-
-from django.conf import settings
 from django.conf.urls.static import static
+from django.conf import settings
 
 from .views import get_user_profile_data, CustomTokenObtainPairView, CustomTokenRefreshView, register, auhtenticated, toggleFollow, get_users_posts, toggleLike, create_post, get_posts, search_users, logout, update_user_details
 
