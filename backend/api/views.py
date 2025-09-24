@@ -303,7 +303,4 @@ def logout(request):
         return res
 
     except:
-        return Response({"success":False})
-    
-def index(request):
-    return render(request, 'index.html')    
+        return Response({"success":False})    
