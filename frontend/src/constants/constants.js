@@ -1,1 +1,1 @@
-export const SERVER_URL = 'http://ec2-35-154-109-187.ap-south-1.compute.amazonaws.com/api/'
+export const SERVER_URL = 'http://127.0.0.1:8000/api'
